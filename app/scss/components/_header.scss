@@ -1,0 +1,178 @@
+.header {
+
+&__top,
+&__bottom {
+	border-bottom: 1px solid $color-light-grey;
+	
+}
+
+&__top {
+	margin-bottom: 20px;
+}
+	
+&__menu {
+	font-size: 0;
+}
+
+&__list-item {
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: $font-size--base;
+	margin-right: 35px;
+
+&:last-child {
+	margin-right: 0;	
+}
+}
+
+&__link {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	opacity: 0.5;
+	color: $color-dark;				
+	text-transform: uppercase;
+	text-decoration: none;
+
+&:hover,
+&:focus {
+}
+}
+
+&__right-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+&__currency {
+	position: relative;
+}
+
+&__language {
+	position: relative;
+	padding-left: 12px;
+
+
+&:before {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 45px;
+	left: -4px;
+	bottom: -15px;
+	background: $color-light-grey;
+}
+}
+
+&__toggle-down {
+	border: none;
+	outline: none;
+	background: transparent;
+	padding-left: 13px;
+	padding-right: 20px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+&__choice-menu {
+	display: none;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background: $color-dark;
+    padding: 5px 0;
+    padding-left: 12px;
+    color: $color-dark;
+    border-radius: 5px;
+
+&--currency {
+	left: -60px;
+	
+}
+
+&--js {
+        display: block;
+}
+}
+
+
+&__choice-list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+&__choice-item {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+&__choice {
+	text-transform: uppercase;
+	margin-right: 12px;
+   	color: $color-white;
+   	padding: 2px;  
+   	cursor: pointer;
+
+&:hover:not(.header__choice--default) {
+	background: $color-blue;
+	border-radius: 5px;
+	}
+
+&--default {
+	opacity: 0.5;
+	color: $color-dark;
+	}
+}
+
+ &__right-row {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: flex-around;
+ }
+
+ &__cart {
+ 	text-transform: uppercase;
+ 	color: $color-dark;
+ 	margin-right: 15px;
+ 	opacity: 0.5;
+ 	letter-spacing: 3px;
+ }
+
+ &__item-number {
+ 	padding: 15px 20px;
+ 	border: 1px solid $color-blue;
+ 	border-radius: 50%;
+ 	margin-right: 20px;
+ }
+ 
+ &__search-form {
+ 	position: relative;
+ }
+
+ &__search-icon {
+ 	border: none;
+ 	background: transparent;
+ 	outline: none;
+ 	cursor: pointer;
+ }
+
+ &__search-field {
+ 		position: absolute;
+ 		content: '';
+ 		left: 15px;
+ 		bottom: 0;
+ 		background: transparent;
+        border: none;
+        outline: none;
+        width: 0;
+        border-bottom: 3px solid transparent;
+        transition: all .5s ease-in-out; 
+
+    &:focus {
+        width: 200px; 
+        border-bottom: 2px solid $color-blue;
+    }
+    }
+
+ }
