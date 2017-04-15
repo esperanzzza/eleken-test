@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, maximum-scale=1">
+    <title>Eleken-test</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Playfair+Display" rel="stylesheet">
+    <script src="https://use.fontawesome.com/b33030c928.js"></script>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+<div class="header__top">
+<div class="container container--flex">
+<ul class="header__menu">
+<li class="header__list-item"><a href="#" class="header__link">Delivery</a></li>
+<li class="header__list-item"><a href="#" class="header__link">Faq</a></li>
+<li class="header__list-item"><a href="#" class="header__link">Help</a></li>
+</ul>
+<div class="header__right-row">
+<div class="header__currency">
+                    <span class="header__choice header__choice--default header__choice--currency">Dollars</span>
+                    <button class="header__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="currency"></button>
+                    <div class="header__choice-menu header__choice-menu--currency" data-menu="currency">
+                    <ul class="header__choice-list">
+                        <li class="header__choice-item"><span class="header__choice" data-currency="euro">euro</span></li>
+                        <li class="header__choice-item"><span class="header__choice" data-currency="UAH">UAH</span></li>
+                        <li class="header__choice-item"><span class="header__choice" data-currency="USD">USD</span></li>
+                    </ul>
+                    </div>
+                </div>
+<div class="header__language">
+                    <span class="header__choice header__choice--default header__choice--language">En</span>
+                    <button class="header__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="lang"></button>
+                    <div class="header__choice-menu" data-menu="lang">
+                    <ul class="header__choice-list">
+                        <li class="header__choice-item"><span class="header__choice" data-lang="рус">рус</span></li>
+                        <li class="header__choice-item"><span class="header__choice" data-lang="eng">eng</span></li>
+                        <li class="header__choice-item"><span class="header__choice" data-lang="укр">укр</span></li>
+                    </ul>
+                    </div>
+                </div>
+</div>
+
+</div>
+</div>
+<div class="header__bottom">
+<div class="container container--flex">
+<h1 class="header__logo">
+	<img src="img/logo.png" alt="Site Logo">
+</h1>
+<nav class="main-nav">
+<ul class="main-nav__menu">
+<li class="main-nav__list-item"><a href="#" class="main-nav__link">Home</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link">Catalog</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link">News</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link">Sale</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link">About</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link">Contact</a></li>
+</ul>
+</nav>
+<div class="header__right-row">
+<a href="#" class="header__cart">Your bag</a>
+<div class="header__item-number"><span>2</span></div>
+<form class="header__search-form" action="/echo" method="get" role="search">
+                    <input type="search" class="header__search-field" name="search" id="search">
+                    <label for="search"></label>
+                    <button type="button" class="header__search-icon fa fa-search" aria-hidden="true"></button>
+                </form>
+</div>
+</div>
+</div>
+</div>
+</header>
+<script src="./js/libs.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
