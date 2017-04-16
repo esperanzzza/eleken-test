@@ -1,13 +1,16 @@
 .header {
 
+
 &__top,
 &__bottom {
 	border-bottom: 1px solid $color-light-grey;
 	
 }
 
-&__top {
-	margin-bottom: 20px;
+&__bottom {
+	padding-top: 25px;
+	padding-bottom: 22px;
+	margin-bottom: 90px;
 }
 	
 &__menu {
@@ -27,16 +30,13 @@
 
 &__link {
 	display: block;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	opacity: 0.5;
 	color: $color-dark;				
 	text-transform: uppercase;
 	text-decoration: none;
-
-&:hover,
-&:focus {
-}
+	border-bottom: 2px solid transparent;
 }
 
 &__right-row {
@@ -47,6 +47,7 @@
 
 &__currency {
 	position: relative;
+	margin-right: 15px;
 }
 
 &__language {
@@ -60,7 +61,7 @@
 	width: 1px;
 	height: 45px;
 	left: -4px;
-	bottom: -15px;
+	bottom: -12px;
 	background: $color-light-grey;
 }
 }
@@ -69,8 +70,6 @@
 	border: none;
 	outline: none;
 	background: transparent;
-	padding-left: 13px;
-	padding-right: 20px;
 	opacity: 0.5;
 	cursor: pointer;
 }
@@ -87,7 +86,7 @@
     border-radius: 5px;
 
 &--currency {
-	left: -60px;
+	left: -120px;
 	
 }
 
@@ -109,9 +108,9 @@
 
 &__choice {
 	text-transform: uppercase;
-	margin-right: 12px;
    	color: $color-white;
    	padding: 2px;  
+   	margin-right: 12px;
    	cursor: pointer;
 
 &:hover:not(.header__choice--default) {
@@ -122,13 +121,19 @@
 &--default {
 	opacity: 0.5;
 	color: $color-dark;
+	margin-right: 0;
 	}
+}
+
+&__logo {
+	font-family: $font-family--logo;
+	align-self: center;
 }
 
  &__right-row {
  	display: flex;
  	justify-content: space-between;
- 	align-items: flex-around;
+ 	align-items: baseline;
  }
 
  &__cart {
@@ -136,16 +141,16 @@
  	color: $color-dark;
  	margin-right: 15px;
  	opacity: 0.5;
- 	letter-spacing: 3px;
+ 	letter-spacing: 1px;
  }
 
  &__item-number {
  	padding: 15px 20px;
  	border: 1px solid $color-blue;
  	border-radius: 50%;
- 	margin-right: 20px;
+ 	margin-right: 17px;
  }
- 
+
  &__search-form {
  	position: relative;
  }
@@ -154,6 +159,7 @@
  	border: none;
  	background: transparent;
  	outline: none;
+ 	opacity: 0.5;
  	cursor: pointer;
  }
 
@@ -170,8 +176,9 @@
         transition: all .5s ease-in-out; 
 
     &:focus {
-        width: 200px; 
+        width: 90px; 
         border-bottom: 2px solid $color-blue;
+        overflow: hidden;
     }
     }
 

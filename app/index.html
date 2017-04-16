@@ -16,19 +16,19 @@
 <div class="header__top">
 <div class="container container--flex">
 <ul class="header__menu">
-<li class="header__list-item"><a href="#" class="header__link">Delivery</a></li>
-<li class="header__list-item"><a href="#" class="header__link">Faq</a></li>
-<li class="header__list-item"><a href="#" class="header__link">Help</a></li>
+<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Delivery</a></li>
+<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Faq</a></li>
+<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Help</a></li>
 </ul>
-<div class="header__right-row">
+<div class="header__right-row header__right-row--top">
 <div class="header__currency">
                     <span class="header__choice header__choice--default header__choice--currency">Dollars</span>
                     <button class="header__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="currency"></button>
                     <div class="header__choice-menu header__choice-menu--currency" data-menu="currency">
                     <ul class="header__choice-list">
                         <li class="header__choice-item"><span class="header__choice" data-currency="euro">euro</span></li>
-                        <li class="header__choice-item"><span class="header__choice" data-currency="UAH">UAH</span></li>
-                        <li class="header__choice-item"><span class="header__choice" data-currency="USD">USD</span></li>
+                        <li class="header__choice-item"><span class="header__choice" data-currency="hrivnas">hrivnas</span></li>
+                        <li class="header__choice-item"><span class="header__choice" data-currency="dollars">dollars</span></li>
                     </ul>
                     </div>
                 </div>
@@ -49,20 +49,24 @@
 </div>
 <div class="header__bottom">
 <div class="container container--flex">
-<h1 class="header__logo">
-	<img src="img/logo.png" alt="Site Logo">
+<h1 class="header__logo"><svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="115px" height="45px">
+<text kerning="auto" font-family="Didot" fill="rgb(51, 51, 51)" font-weight="bold" font-size="52px" x="0px" y="39.062px">C&#38;B</text>
+</svg>
 </h1>
 <nav class="main-nav">
 <ul class="main-nav__menu">
-<li class="main-nav__list-item"><a href="#" class="main-nav__link">Home</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link">Catalog</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link">News</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link">Sale</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link">About</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link">Contact</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Home</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Catalog</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">News</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--active hvr-underline-from-center">Sale</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">About</a></li>
+<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Contact</a></li>
 </ul>
 </nav>
-<div class="header__right-row">
+<div class="header__right-row header__right-row--bottom">
 <a href="#" class="header__cart">Your bag</a>
 <div class="header__item-number"><span>2</span></div>
 <form class="header__search-form" action="/echo" method="get" role="search">
