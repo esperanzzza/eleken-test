@@ -1,0 +1,95 @@
+.catalog {
+
+	&__title {
+		font-family: $font-family--alt;
+		font-size: $font-size--xl;
+		line-height: 1.8;
+		margin-bottom: 30px;
+		text-align: center;
+
+	}
+
+	&__navigation {
+		margin: 0 auto;
+		margin-bottom: 20px;
+		width: 630px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		width: 630px;
+		text-align: center;
+	}
+
+	&__link {
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-decoration: none;
+		color: $color-dark;
+		opacity: 0.5;
+		text-transform: uppercase;
+		border-bottom: 2px solid transparent;
+		letter-spacing: 1px;
+	}
+
+		&__gallery {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-bottom: 25px;
+	}
+
+		&__item {
+			margin: 0;
+			margin-bottom: 20px;
+	}
+
+		&__item-name {
+			margin-top: 9px;
+			margin-bottom: 5px;
+			font-family: $font-family--alt;
+			font-size: $font-size--md;
+			line-height: 1.25;
+			font-weight: 400;
+			text-transform: none;
+			text-align: center;
+	}
+
+		&__price {
+			display: inline-block;
+			font-family: $font-family;
+			font-size: $font-size--md;
+
+			&--old {
+				text-decoration: line-through;
+				opacity: 0.5;
+				margin-right: 10px;
+			}
+
+			&--new {
+				color: $color-red;
+			}
+	}
+
+		&__image {
+			border: 1px solid transparent;
+			transition: transform 0.5s ease-in-out;
+
+			&:hover:hover {
+			  border: 1px solid $color-dark;
+			  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+			  transform: scale(1.1);
+		}
+	}
+
+		&__more-link {
+			margin: 0 auto;
+			width: 100px;
+			margin-bottom: 60px;
+
+	}
+
+}

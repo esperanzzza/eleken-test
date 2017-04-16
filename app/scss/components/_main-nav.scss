@@ -1,5 +1,9 @@
 .main-nav {
 
+			&--footer {
+			opacity: 1;
+		}
+
 	&__menu {
 		display: flex;
 		justify-content: space-between;
@@ -18,9 +22,12 @@
 		border-bottom: 2px solid transparent;
 		letter-spacing: 1px;
 
-&--active {
-		color: $color-red;
-}
-}
+			&--active {
+			color: $color-red;
+		}
+			&--footer {
+			opacity: 1;
+		}
+	}
 
 }

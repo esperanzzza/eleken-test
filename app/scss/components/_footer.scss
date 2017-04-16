@@ -1,0 +1,13 @@
+.footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	&__logo {
+	font-family: $font-family--logo;
+	align-self: center;
+}
+
+	&__copyright {
+		opacity: 0.5;
+}
+}

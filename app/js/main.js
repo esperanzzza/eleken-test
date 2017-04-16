@@ -11,8 +11,8 @@ $(document).ready(function() {
         itemChosen = $('.header__choice'),
         toggleSearch = $('.header__search-icon'),
         formSearch = $('.header__search-field'),
-        formHide = 'header__right-row--js',
-        formShow = 'header__right-row--js';
+        formRow = $('.header__right-row'),
+        formRowShow = 'header__right-row--js';
 
     toggleDown.click(function(event) {
         if ($(event.target).is("[data-menu='currency']")) {
