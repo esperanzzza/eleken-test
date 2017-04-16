@@ -1,167 +1,180 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, maximum-scale=1">
-    <title>Eleken-test</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display" rel="stylesheet">
-    <script src="https://use.fontawesome.com/b33030c928.js"></script>
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<header class="header">
-<div class="header__top">
-<div class="container container--flex">
-<ul class="header__menu">
-<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Delivery</a></li>
-<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Faq</a></li>
-<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Help</a></li>
-</ul>
-<div class="header__right-row header__right-row--top">
-<div class="header__currency">
-                    <span class="header__choice header__choice--default header__choice--currency">Dollars</span>
-                    <button class="header__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="currency"></button>
-                    <div class="header__choice-menu header__choice-menu--currency" data-menu="currency">
-                    <ul class="header__choice-list">
-                        <li class="header__choice-item"><span class="header__choice" data-currency="euro">euro</span></li>
-                        <li class="header__choice-item"><span class="header__choice" data-currency="hrivnas">hrivnas</span></li>
-                        <li class="header__choice-item"><span class="header__choice" data-currency="dollars">dollars</span></li>
-                    </ul>
-                    </div>
-                </div>
-<div class="header__language">
-                    <span class="header__choice header__choice--default header__choice--language">En</span>
-                    <button class="header__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="lang"></button>
-                    <div class="header__choice-menu" data-menu="lang">
-                    <ul class="header__choice-list">
-                        <li class="header__choice-item"><span class="header__choice" data-lang="рус">рус</span></li>
-                        <li class="header__choice-item"><span class="header__choice" data-lang="eng">eng</span></li>
-                        <li class="header__choice-item"><span class="header__choice" data-lang="укр">укр</span></li>
-                    </ul>
-                    </div>
-                </div>
-</div>
-
-</div>
-</div>
-<div class="header__bottom">
-<div class="container container--flex">
-<h1 class="header__logo"><svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="115px" height="45px">
-<text kerning="auto" font-family="Didot" fill="rgb(51, 51, 51)" font-weight="bold" font-size="52px" x="0px" y="39.062px">C&#38;B</text>
-</svg>
-</h1>
-<nav class="main-nav">
-<ul class="main-nav__menu">
-<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Home</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Catalog</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">News</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--active hvr-underline-from-center">Sale</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">About</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Contact</a></li>
-</ul>
-</nav>
-<div class="header__right-row header__right-row--bottom">
-<a href="#" class="header__cart">Your bag</a>
-<div class="header__item-number"><span>2</span></div>
-<form class="header__search-form" action="/echo" method="get" role="search">
-                    <input type="search" class="header__search-field" name="search" id="search">
-                    <label for="search"></label>
-                    <button type="button" class="header__search-icon fa fa-search" aria-hidden="true"></button>
-                </form>
-</div>
-</div>
-</div>
-</div>
-</header>
-<section class="catalog">
-<div class="container">
-	<h2 class="catalog__title">Catalog</h2>
-	<div class="catalog__navigation">
-	<ul class="catalog__list">
-	<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">All</a></li>
-<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">T-shirts</a></li>
-<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">Sweaters</a></li>
-<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">Shirts</a></li>
-<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">Jackets</a></li>
-<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">Accessoires</a></li>
-	</ul>
-	</div>
-<div class="catalog__gallery">
-<figure class="catalog__item">
-<a class="catalog__link" href="#">
-<img class="catalog__image" alt="" src="img/swimsuit--printed.jpg"></a>
-
-<figcaption><h3 class="catalog__item-name">Printed swimsuit</h3><span class="catalog__price">$23</span>
-</figcaption>
-</figure>
-<figure class="catalog__item">
-<a class="catalog__link" href="#">
-<img class="catalog__image" alt="" src="img/bermuda-shorts.jpg"></a>
-<figcaption><h3 class="catalog__item-name">Jogging bermuda shorts</h3><span class="catalog__price catalog__price--old">$36</span><span class="catalog__price catalog__price--new">$12</span></figcaption>
-</figure>
-<figure class="catalog__item">
-<a class="catalog__link" href="#">
-<img class="catalog__image" alt="" src="img/flip-flops.jpg"></a>
-<figcaption><h3 class="catalog__item-name">Basic beach flip flops</h3><span class="catalog__price">$9</span></figcaption>
-</figure>
-<figure class="catalog__item">
-<a class="catalog__link" href="#">
-<img class="catalog__image" alt="" src="img/sunglasses.jpg"></a>
-<figcaption><h3 class="catalog__item-name">Black sunglasses</h3><span class="catalog__price">$29</span></figcaption>
-</figure>
-<figure class="catalog__item">
-<a class="catalog__link" href="#">
-<img class="catalog__image" alt="" src="img/twill-shirt.jpg"></a>
-<figcaption><h3 class="catalog__item-name">Long sleeved twill shirt</h3><span class="catalog__price">$20</span></figcaption>
-</figure>
-<figure class="catalog__item">
-<a class="catalog__link" href="#">
-<img class="catalog__image" alt="" src="img/swimsuit.jpg"></a>
-<figcaption><h3 class="catalog__item-name">Basic swimsuit</h3><span class="catalog__price">$36</span></figcaption>
-</figure>
-<figure class="catalog__item">
-<a class="catalog__link" href="#">
-<img class="catalog__image" alt="" src="img/bleached-shorts.jpg"></a>
-<figcaption><h3 class="catalog__item-name">Bleached shorts</h3><span class="catalog__price">$12</span></figcaption>
-</figure>
-<figure class="catalog__item">
-<a class="catalog__link" href="#">
-<img class="catalog__image" alt="" src="img/t-shirt-discount.jpg"></a>
-<figcaption><h3 class="catalog__item-name">T-shirt with lower panel</h3><span class="catalog__price catalog__price--old">$32</span><span class="catalog__price catalog__price--new">$12</span></figcaption>
-</figure>
-</div> 
-<p class="catalog__more-link"><a class="catalog__link hvr-underline-from-center" href="#">Load more...</a></p>
-</div>
-</section>
-<footer class="footer">
-<div class="container container--flex">
-<h1 class="footer__logo"><svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="115px" height="45px">
-<text kerning="auto" font-family="Didot" fill="rgb(51, 51, 51)" font-weight="bold" font-size="52px" x="0px" y="39.062px">C&#38;B</text>
-</svg>
-</h1>
-<nav class="main-nav main-nav--footer">
-<ul class="main-nav__menu">
-<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">Home</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">Catalog</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">News</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">Sale</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">About</a></li>
-<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">Contact</a></li>
-</ul>
-</nav>
-<p class="footer__copyright">©2010 - 2016 All rights reserved</p>
-</div>
-</footer>
-<script src="./js/libs.min.js"></script>
-<script src="./js/main.js"></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, maximum-scale=1">
+		<title>Eleken-test</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+		<script src="https://use.fontawesome.com/b33030c928.js"></script>
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+				<div class="container container--row">
+					<ul class="header__menu">
+						<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Delivery</a></li>
+						<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Faq</a></li>
+						<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Help</a></li>
+					</ul>
+					<div class="header__right-row header__right-row--top">
+						<div class="header__currency">
+							<span class="header__choice header__choice--default header__choice--currency">Dollars</span>
+							<button class="header__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="currency"></button>
+							<div class="header__choice-menu header__choice-menu--currency" data-menu="currency">
+								<ul class="header__choice-list">
+									<li class="header__choice-item"><span class="header__choice" data-currency="euro">euro</span></li>
+									<li class="header__choice-item"><span class="header__choice" data-currency="hrivnas">hrivnas</span></li>
+									<li class="header__choice-item"><span class="header__choice" data-currency="dollars">dollars</span></li>
+									<li class="header__choice-item"><buton class="header__close-icon fa fa-times" aria-hidden="true"></button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__language">
+							<span class="header__choice header__choice--default header__choice--language">En</span>
+							<button class="header__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="lang"></button>
+							<div class="header__choice-menu" data-menu="lang">
+								<ul class="header__choice-list">
+									<li class="header__choice-item"><span class="header__choice" data-lang="рус">рус</span></li>
+									<li class="header__choice-item"><span class="header__choice" data-lang="eng">eng</span></li>
+									<li class="header__choice-item"><span class="header__choice" data-lang="укр">укр</span></li>
+									<li class="header__choice-item"><button class="header__close-icon fa fa-times" aria-hidden="true"></button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom">
+				<div class="container container--row">
+					<h1 class="header__logo"><svg
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+						width="115px" height="45px">
+						<text kerning="auto" font-family="Didot" fill="rgb(51, 51, 51)" font-weight="bold" font-size="52px" x="0px" y="39.062px">C&#38;B</text>
+					</svg>
+					</h1>
+					<nav class="main-nav">
+						<ul class="main-nav__menu">
+							<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Home</a></li>
+							<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Catalog</a></li>
+							<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">News</a></li>
+							<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--active hvr-underline-from-center">Sale</a></li>
+							<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">About</a></li>
+							<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="header__right-row header__right-row--bottom">
+						<div class="header__cart-group">
+						<a href="#" class="header__cart-link hvr-underline-from-center">Your bag</a>
+						<input class="header__item-number" type="number" value="2" name="number"></input>
+						</div>
+						<form class="header__search-form" action="/echo" method="get" role="search">
+							<input type="search" class="header__search-field" name="search" id="search">
+							<label for="search"></label>
+							<button type="button" class="header__search-icon fa fa-search" aria-hidden="true"></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="catalog">
+			<div class="container">
+				<h2 class="catalog__title">Catalog</h2>
+				<div class="catalog__navigation">
+					<ul class="catalog__list">
+						<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">All</a></li>
+						<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">T-shirts</a></li>
+						<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">Sweaters</a></li>
+						<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">Shirts</a></li>
+						<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">Jackets</a></li>
+						<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">Accessoires</a></li>
+					</ul>
+				</div>
+				<div class="catalog__gallery">
+					<figure class="catalog__item">
+						<a class="catalog__link" href="#">
+						<img class="catalog__image" alt="" src="img/swimsuit--printed.jpg"></a>
+						<figcaption><h3 class="catalog__item-name">Printed swimsuit</h3><span class="catalog__price">$23</span>
+						</figcaption>
+					</figure>
+					<figure class="catalog__item">
+						<a class="catalog__link" href="#">
+						<img class="catalog__image" alt="" src="img/bermuda-shorts.jpg"></a>
+						<figcaption><h3 class="catalog__item-name">Jogging bermuda shorts</h3><span class="catalog__price catalog__price--old">$36</span><span class="catalog__price catalog__price--new">$12</span></figcaption>
+					</figure>
+					<figure class="catalog__item catalog__item--new">
+						<a class="catalog__link" href="#">
+						<img class="catalog__image" alt="" src="img/flip-flops.jpg"></a>
+						<figcaption><h3 class="catalog__item-name">Basic beach flip flops</h3><span class="catalog__price">$9</span></figcaption>
+					</figure>
+					<figure class="catalog__item">
+						<a class="catalog__link" href="#">
+						<img class="catalog__image" alt="" src="img/sunglasses.jpg"></a>
+						<figcaption><h3 class="catalog__item-name">Black sunglasses</h3><span class="catalog__price">$29</span></figcaption>
+					</figure>
+					<figure class="catalog__item">
+						<a class="catalog__link" href="#">
+						<img class="catalog__image" alt="" src="img/twill-shirt.jpg"></a>
+						<figcaption><h3 class="catalog__item-name">Long sleeved twill shirt</h3><span class="catalog__price">$20</span></figcaption>
+					</figure>
+					<figure class="catalog__item">
+						<a class="catalog__link" href="#">
+						<img class="catalog__image" alt="" src="img/swimsuit.jpg"></a>
+						<figcaption><h3 class="catalog__item-name">Basic swimsuit</h3><span class="catalog__price">$36</span></figcaption>
+					</figure>
+					<figure class="catalog__item">
+						<a class="catalog__link" href="#">
+						<img class="catalog__image" alt="" src="img/bleached-shorts.jpg"></a>
+						<figcaption><h3 class="catalog__item-name">Bleached shorts</h3><span class="catalog__price">$12</span></figcaption>
+					</figure>
+					<figure class="catalog__item">
+						<a class="catalog__link" href="#">
+						<img class="catalog__image" alt="" src="img/t-shirt-discount.jpg"></a>
+						<figcaption><h3 class="catalog__item-name">T-shirt with lower panel</h3><span class="catalog__price catalog__price--old">$32</span><span class="catalog__price catalog__price--new">$12</span></figcaption>
+					</figure>
+				</div>
+				<p class="catalog__more-link"><a class="catalog__link hvr-underline-from-center" href="#">Load more...</a></p>
+			</div>
+		</section>
+		<section class="subscribe">
+		<div class="container--column">
+		<h2 class="subscribe__title">Subscribe</h2>
+		<p class="subscribe__slogan">Stay updated on news</p>
+		<form class="subscribe__email-form" action="/echo" method="post">
+							<input type="email" class="subscribe__email-field" name="email" id="email" placeholder="Stay updated on news">
+							<label for="email"></label>
+							<button type="submit" class="subscribe__submit-btn">
+							<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+						</form>
+		</div>
+		</section>
+		<footer class="footer">
+			<div class="container container--row">
+				<h1 class="footer__logo"><svg
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					width="115px" height="45px">
+					<text kerning="auto" font-family="Didot" fill="rgb(51, 51, 51)" font-weight="bold" font-size="52px" x="0px" y="39.062px">C&#38;B</text>
+				</svg>
+				</h1>
+				<nav class="main-nav main-nav--footer">
+					<ul class="main-nav__menu">
+						<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">Home</a></li>
+						<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">Catalog</a></li>
+						<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">News</a></li>
+						<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">Sale</a></li>
+						<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">About</a></li>
+						<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer hvr-underline-from-center">Contact</a></li>
+					</ul>
+				</nav>
+				<p class="footer__copyright">©2010 - 2016 All rights reserved</p>
+			</div>
+		</footer>
+		<script src="./js/libs.min.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
 </html>

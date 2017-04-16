@@ -11,7 +11,7 @@
 
 	&__navigation {
 		margin: 0 auto;
-		margin-bottom: 20px;
+		margin-bottom: 27px;
 		width: 630px;
 	}
 
@@ -45,6 +45,23 @@
 		&__item {
 			margin: 0;
 			margin-bottom: 20px;
+
+		&--new {
+			position: relative;
+
+			&:after {
+				position: absolute;
+				content: 'New';
+				left: 25px;
+				top: 32px;
+				text-transform: uppercase;
+				font-size: $font-size--sm;
+				color: $color-white;
+				background: linear-gradient(to right, #1477d4, #248ddc);
+				padding: 7px 10px;
+				border-radius: 20px;
+			}
+		}
 	}
 
 		&__item-name {
@@ -87,9 +104,8 @@
 
 		&__more-link {
 			margin: 0 auto;
+			margin-bottom: 45px;
 			width: 100px;
-			margin-bottom: 60px;
-
 	}
 
 }

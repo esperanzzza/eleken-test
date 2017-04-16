@@ -1,0 +1,103 @@
+.subscribe {
+	background: url('../img/subscribe-bg.jpg') no-repeat center;
+	width: 1440px;
+	height: 287px;
+	margin-bottom: 25px;
+	
+
+	&__title {
+	opacity: 0.6;
+	margin-bottom: 15px;
+	padding-top: 65px;
+	text-transform: uppercase;
+	font-size: $font-size--base;
+	}
+
+	&__slogan {
+	font-family: $font-family--alt;
+	font-size: $font-size--lg;
+	color: $color-white;
+	margin-bottom: 20px;
+	}
+
+	&__email-form {
+	position: relative;
+	margin-bottom: 70px;
+	}
+
+	&__email-field[type="email"] {
+	box-sizing: border-box;
+	border: 3px solid $color-light-blue;
+	border-radius: 30px;
+	outline: none;
+	padding: 15px 20px;
+	width: 300px;
+	background: transparent;
+
+		  &::-webkit-input-placeholder {
+		  text-indent: 0px;   
+		  transition: text-indent 0.5s ease;
+		  color: $color-white;
+		  opacity: 1;
+		  letter-spacing: 1px;
+		  text-transform: uppercase;
+	}
+		  &::-moz-placeholder {
+   		  text-indent: 0px;   
+		  transition: text-indent 0.5s ease;
+		  color: $color-white;
+		  opacity: 1;
+		  letter-spacing: 1px;
+		  text-transform: uppercase;
+	}
+		  &:-moz-placeholder {
+  		  text-indent: 0px;   
+		  transition: text-indent 0.5s ease;
+		  color: $color-white;
+		  opacity: 1;
+		  letter-spacing: 1px;
+		  text-transform: uppercase;
+	}
+		  &:-ms-input-placeholder {
+          text-indent: 0px;   
+		  transition: text-indent 0.5s ease;
+		  color: $color-white;
+		  opacity: 1;
+		  letter-spacing: 1px;
+		  text-transform: uppercase;
+	}
+
+			&:focus::-webkit-input-placeholder {
+			text-indent: -500px; 
+			transition: text-indent 0.5s ease;
+		}
+
+			&:focus::-moz-input-placeholder {
+			text-indent: -500px; 
+			transition: text-indent 0.5s ease;
+		}
+			&:focus:-moz-input-placeholder {
+			text-indent: -500px; 
+			transition: text-indent 0.5s ease;
+		}
+			&:focus:-ms-input-placeholder {
+			text-indent: -500px; 
+			transition: text-indent 0.5s ease;
+		}
+
+	}
+
+
+	&__submit-btn {
+	position: absolute;
+	right: 20px;
+	top: 13px;
+	color: $color-white;
+	border: none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+	font-size: $font-size--md;
+	}
+
+}
