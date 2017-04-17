@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="header__top">
+			<div class="header__top hide-mobile">
 				<div class="container container--row">
 					<ul class="header__menu">
 						<li class="header__list-item"><a href="#" class="header__link hvr-underline-from-center">Delivery</a></li>
@@ -27,21 +27,20 @@
 							<div class="header__choice-menu header__choice-menu--currency" data-menu="currency">
 								<ul class="header__choice-list">
 									<li class="header__choice-item"><span class="header__choice" data-currency="euro">euro</span></li>
-									<li class="header__choice-item"><span class="header__choice" data-currency="hrivnas">hrivnas</span></li>
 									<li class="header__choice-item"><span class="header__choice" data-currency="dollars">dollars</span></li>
-									<li class="header__choice-item"><buton class="header__close-icon fa fa-times" aria-hidden="true"></button></li>
+									<li class="header__choice-item"><buton class="header__close-icon fa fa-times" data-menu="currency" aria-hidden="true"></button></li>
 								</ul>
 							</div>
 						</div>
 						<div class="header__language">
 							<span class="header__choice header__choice--default header__choice--language">En</span>
 							<button class="header__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="lang"></button>
-							<div class="header__choice-menu" data-menu="lang">
+							<div class="header__choice-menu header__choice-menu--language" data-menu="lang">
 								<ul class="header__choice-list">
-									<li class="header__choice-item"><span class="header__choice" data-lang="рус">рус</span></li>
-									<li class="header__choice-item"><span class="header__choice" data-lang="eng">eng</span></li>
-									<li class="header__choice-item"><span class="header__choice" data-lang="укр">укр</span></li>
-									<li class="header__choice-item"><button class="header__close-icon fa fa-times" aria-hidden="true"></button></li>
+									<li class="header__choice-item"><span class="header__choice" data-lang="ru">ru</span></li>
+									<li class="header__choice-item"><span class="header__choice" data-lang="eng">en</span></li>
+									<li class="header__choice-item"><span class="header__choice" data-lang="ua">ua</span></li>
+									<li class="header__choice-item"><button class="header__close-icon fa fa-times" data-menu="lang" aria-hidden="true"></button></li>
 								</ul>
 							</div>
 						</div>
@@ -57,7 +56,7 @@
 						<text kerning="auto" font-family="Didot" fill="rgb(51, 51, 51)" font-weight="bold" font-size="52px" x="0px" y="39.062px">C&#38;B</text>
 					</svg>
 					</h1>
-					<nav class="main-nav">
+					<nav class="main-nav hide-mobile">
 						<ul class="main-nav__menu">
 							<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Home</a></li>
 							<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Catalog</a></li>
@@ -67,17 +66,23 @@
 							<li class="main-nav__list-item"><a href="#" class="main-nav__link hvr-underline-from-center">Contact</a></li>
 						</ul>
 					</nav>
-					<div class="header__right-row header__right-row--bottom">
+					<div class="header__right-row header__right-row--bottom hide-mobile">
 						<div class="header__cart-group">
-						<a href="#" class="header__cart-link hvr-underline-from-center">Your bag</a>
-						<input class="header__item-number" type="number" value="2" name="number"></input>
+							<a href="#" class="header__cart-link hvr-underline-from-center">Your bag</a>
+							<input class="header__item-number" type="number" value="2" name="number"></input>
 						</div>
 						<form class="header__search-form" action="/echo" method="get" role="search">
 							<input type="search" class="header__search-field" name="search" id="search">
 							<label for="search"></label>
 							<button type="button" class="header__search-icon fa fa-search" aria-hidden="true"></button>
+							<button type="submit" name="search-submit" class="header__search-submit fa fa-search" aria-hidden="true"></button>
 						</form>
 					</div>
+					<div class="modal__control hide-desktop">
+					<button class="burger burger--modal">
+					<span class="burger__line"></span>
+					</button>
+				</div>
 				</div>
 			</div>
 		</header>
@@ -141,18 +146,18 @@
 			</div>
 		</section>
 		<section class="subscribe">
-		<div class="container--column">
-		<h2 class="subscribe__title">Subscribe</h2>
-		<p class="subscribe__slogan">Stay updated on news</p>
-		<form class="subscribe__email-form" action="/echo" method="post">
-							<input type="email" class="subscribe__email-field" name="email" id="email" placeholder="Stay updated on news">
-							<label for="email"></label>
-							<button type="submit" class="subscribe__submit-btn">
-							<i class="fa fa-angle-right" aria-hidden="true"></i></button>
-						</form>
-		</div>
+		<div class="container container--column">
+				<h2 class="subscribe__title">Subscribe</h2>
+				<p class="subscribe__slogan">Stay updated on news</p>
+				<form class="subscribe__email-form" action="/echo" method="post">
+					<input type="email" class="subscribe__email-field" name="email" id="email" placeholder="Stay updated on news">
+					<label for="email"></label>
+					<button type="submit" class="subscribe__submit-btn">
+					<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+				</form>
+			</div>
 		</section>
-		<footer class="footer">
+		<footer class="footer hide-mobile">
 			<div class="container container--row">
 				<h1 class="footer__logo"><svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +179,81 @@
 				<p class="footer__copyright">©2010 - 2016 All rights reserved</p>
 			</div>
 		</footer>
-		<script src="./js/libs.min.js"></script>
-		<script src="./js/main.js"></script>
-	</body>
-</html>
+		<div class="modal hide-desktop">
+			<div class="modal__overlay"></div>
+			<div class="menu-mobile">
+				<ul class="menu-mobile__list">
+					<li class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">Delivery</a>
+					</li>
+					<li class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">Faq</a>
+					</li>
+					<li class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">Help</a>
+					</li>
+				</ul>
+				<ul class="menu-mobile__list">
+					<li class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">Home</a>
+					</li>
+					<li class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">Catalog</a>
+					</li>
+					<li class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">News</a>
+					</li>
+					<li class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">Sale</a>
+					</li>
+					<li class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">About</a>
+					</li>
+					<li class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">Contact</a>
+					</li>
+				</ul>
+				<div class="menu-mobile__buttons">
+				<div class="menu-mobile__top-group">
+					<div class="menu-mobile__currency">
+						<span class="menu-mobile__choice menu-mobile__choice--default menu-mobile__choice--currency">Dollars</span>
+						<button class="menu-mobile__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="currency"></button>
+						<div class="menu-mobile__choice-menu menu-mobile__choice-menu--currency" data-menu="currency">
+							<ul class="menu-mobile__choice-list hvr-bubble-top">
+								<li class="menu-mobile__choice-item"><span class="menu-mobile__choice" data-currency="euro">euro</span></li>
+								<li class="menu-mobile__choice-item"><span class="menu-mobile__choice" data-currency="dollars">dollars</span></li>
+								<li class="menu-mobile__choice-item"><button class="menu-mobile__close-icon fa fa-times" aria-hidden="true" data-menu="currency"></button></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-mobile__language">
+						<span class="menu-mobile__choice menu-mobile__choice--default menu-mobile__choice--language">En</span>
+						<button class="menu-mobile__toggle-down fa fa-chevron-down" aria-hidden="true" data-menu="lang"></button>
+						<div class="menu-mobile__choice-menu  menu-mobile__choice-menu--language" data-menu="lang">
+							<ul class="menu-mobile__choice-list hvr-bubble-top">
+								<li class="menu-mobile__choice-item"><span class="menu-mobile__choice" data-lang="ru">ru</span></li>
+								<li class="menu-mobile__choice-item"><span class="menu-mobile__choice" data-lang="eng">en</span></li>
+								<li class="menu-mobile__choice-item"><span class="menu-mobile__choice" data-lang="ua">ua</span></li>
+								<li class="menu-mobile__choice-item"><button class="menu-mobile__close-icon fa fa-times" aria-hidden="true" data-menu="lang"></button></li>
+							</ul>
+						</div>
+					</div>
+					</div>
+					<div class="menu-mobile__bottom-group">
+					<div class="menu-mobile__cart-group">
+						<a href="#" class="menu-mobile__cart-link"><i class="menu-mobile__cart-icon fa fa-shopping-cart" aria-hidden="true"></i></a>
+						<input class="menu-mobile__item-number" type="number" value="2" name="number"></input>
+					</div>
+					<form class="menu-mobile__search-form" action="/echo" method="get" role="search">
+						<input type="search" class="menu-mobile__search-field" name="search" id="search">
+						<label for="search"></label>
+						<button type="button" class="menu-mobile__search-icon fa fa-search" aria-hidden="true"></button>
+						<button type="submit" name="search-submit-mobile" class="menu-mobile__search-submit fa fa-search" aria-hidden="true"></button>
+					</form>
+				</div>
+				</div>
+			</div>
+			<script src="./js/libs.min.js"></script>
+			<script src="./js/main.js"></script>
+		</body>
+	</html>

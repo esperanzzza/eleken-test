@@ -1,0 +1,50 @@
+.burger {
+	width: 40px;
+	height: 40px;
+	background: transparent;
+    border: none;
+    outline: none;
+
+&--modal {
+	position: relative;
+}
+
+&__line,
+&__line:before,
+&__line:after {
+	  position: absolute;
+	  display: block;
+	  content: '';
+	  cursor: pointer;
+	  border-radius: 1px;
+	  height: 5px;
+	  width: 35px;
+	  background: $color-dark;
+	  transition: all 0.5s ease-in-out;
+} 
+
+&__line:before {
+top: -10px;
+}
+
+&__line:after {
+bottom: -10px; 
+}
+
+&--active span {
+  background-color: transparent;
+}
+
+&--active span:before, 
+&--active span:after {
+  top: 0;
+}
+
+&--active span:before {
+  transform: rotate(45deg);
+}
+
+&--active span:after {
+  transform: rotate(-45deg);
+}
+}
