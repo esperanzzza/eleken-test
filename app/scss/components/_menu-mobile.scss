@@ -24,7 +24,7 @@
 	color: $color-white;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.25rem;
+	font-size: $font-size--mobile;
 
 &:hover,
 &:focus {
@@ -94,7 +94,7 @@
    	color: $color-dark;
    	padding: 2px;  
    	cursor: pointer;
-   	font-size: 1.25rem;
+   	font-size: $font-size--mobile;
 
 &:hover:not(.menu-mobile__choice--default),
 &:focus:not(.menu-mobile__choice--default) {
@@ -114,7 +114,7 @@
 	outline: none;
 	background: transparent;
 	cursor: pointer;
-	font-size: 1.25rem;
+	font-size: $font-size--mobile;
 }
 
 &__cart-group {

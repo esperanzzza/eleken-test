@@ -8,6 +8,7 @@ $color-link--hover:					#1578d4;
 $color-red:							#fc411d;
 $color-light-grey: 					#ededed;
 $color-light-blue: 					#9dccef;
+$color-checked:						#b5b5b5;
 
 
 
@@ -23,11 +24,12 @@ $font-size--sm: 					0.6875rem; //11px
 $font-size--md: 					$html-size--base;
 $font-size--lg: 					2.375rem; //38px;
 $font-size--xl: 					3.625rem; //58px;
+$font-size--mobile: 				1.25rem; //20px;
 
 /*------------------------------------*\
   Variables for adaptive grid
 \*------------------------------------*/
-$screen-md: 						900px;
+$screen-md: 						1050px;
 $screen-sm: 						500px;
 $screen-xs: 						300px;
 

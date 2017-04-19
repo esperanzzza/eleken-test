@@ -13,6 +13,23 @@
 		margin: 0 auto;
 		margin-bottom: 27px;
 		width: 630px;
+
+		@media (min-width: $screen-xs) and (max-width: 699px) {
+		display: none;
+	}
+
+			&--mobile {
+				@media (max-width: 699px)  {
+				display: block;
+		}
+
+		}
+			&--hidden {
+				@media (min-width: 700px)  {
+				display: none;
+		}
+
+		}
 	}
 
 	&__list {
@@ -42,18 +59,17 @@
 			margin-bottom: 25px;
 
 			@media (min-width: $screen-xs) and (max-width: 650px) {
-			flex-direction: column;
+			flex-wrap: nowrap;
 			justify-content: center;
-			align-items: center;
 		}
 	}
 
 		&__item {
 			margin: 0;
 			margin-bottom: 20px;
+			position: relative;
 
 		&--new {
-			position: relative;
 
 			&:after {
 				position: absolute;
@@ -68,7 +84,40 @@
 				border-radius: 20px;
 			}
 		}
+
+		@media (min-width: $screen-xs) and (max-width: 650px) {
+				display: none;
+
+				&--current {
+				display: block;
+				}
+		}
 	}
+
+	&__controls {
+				@media (min-width: 650px) {
+				display: none;
+			}
+	}
+
+	&__control {
+				position: absolute;
+				color: $color-dark;
+				font-size: $font-size--lg;
+				top: calc(50% - 30px);
+				border: none;
+				outline: none;
+				background: transparent;
+				cursor: pointer;
+
+	&--left {		
+				left: -30px;
+	}
+
+	&--right {
+				right: -30px;
+	}
+}
 
 		&__item-name {
 			margin-top: 9px;
@@ -113,5 +162,70 @@
 			margin-bottom: 45px;
 			width: 100px;
 	}
+
+&__form-sorting {
+	margin: 0 auto;
+}
+
+	&__form-sorting label {
+  display: block;
+  cursor: pointer;
+  padding-bottom: 20px;
+  padding-top: 20xp;
+  text-transform: uppercase;
+}
+
+&__sorting-field[type='radio'] {
+  display: none;
+}
+
+&__sorting-field[type='radio']+label::before {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  margin-right: 12px;
+  color: $color-light-grey;
+}
+
+&__sorting-field[type='radio']+label:hover::before {
+  color: $color-checked;
+}
+
+&__sorting-field[type='radio']:disabled+label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+&__sorting-field[type='radio']:disabled+label::before {
+  color: rgba(181, 181, 181, 0.3);
+}
+
+&__sorting-field[type='radio']:checked:disabled+label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+&__sorting-field[type='radio']:checked:disabled+label::before {
+  color: rgba(181, 181, 181, 0.3);
+}
+
+&__sorting-field[type='radio']:checked+label::before {
+  content: '\f192';
+  color: $color-checked;
+}
+
+&__sorting-btn {
+display: inline-block;
+vertical-align: middle;
+box-sizing: border-box;
+border: none;
+outline: none;
+width: 145px;
+margin-top: 15px;
+padding: 14px 0;
+color: $color-white;
+background: $color-dark;
+text-transform: uppercase;
+text-align: center;
+font-size: 1.5rem;
+}
 
 }

@@ -99,47 +99,102 @@
 						<li class="catalog__list-item"><a href="#" class="catalog__link hvr-underline-from-center">Accessoires</a></li>
 					</ul>
 				</div>
+				<div class="catalog__navigation catalog__navigation--mobile catalog__navigation--hidden">
+				<form class="catalog__form-sorting" action="/echo" method="post">
+				<input class="catalog__sorting-field" type="radio" name="sorting-goods" id="sorting-goods1" value="All" checked>
+              <label for="sorting-goods1" class="fa fa-circle-o" aria-hidden="true">All
+              </label>
+              <input class="catalog__sorting-field" type="radio" name="sorting-goods" id="sorting-goods2" value="T-shirts">
+              <label for="sorting-goods2" class="fa fa-circle-o">T-shirts
+              </label>
+              <input class="catalog__sorting-field" type="radio" name="sorting-goods" id="sorting-goods3" value="Sweaters" >
+              <label for="sorting-goods3" class="fa fa-circle-o">Sweaters
+              </label>
+              <input class="catalog__sorting-field" type="radio" name="sorting-goods" id="sorting-goods4" value="Shirts">
+              <label for="sorting-goods4" class="fa fa-circle-o">Shirts
+              </label>
+              <input class="catalog__sorting-field" type="radio" name="sorting-goods" id="sorting-goods5" value="Jackets">
+              <label for="sorting-goods5" class="fa fa-circle-o">Jackets
+              </label>
+              <input class="catalog__sorting-field" type="radio" name="sorting-goods" id="sorting-goods6" value="Accessoires">
+              <label for="sorting-goods6" class="fa fa-circle-o">Accessoires
+              </label>
+              <button class="catalog__sorting-btn hvr-sweep-to-bottom" type="submit">Show</button>
+            </form>
+          </div>
 				<div class="catalog__gallery">
-					<figure class="catalog__item">
+					<figure class="catalog__item catalog__item--current" data-val="1">
 						<a class="catalog__link" href="#">
 						<img class="catalog__image" alt="" src="img/swimsuit--printed.jpg"></a>
 						<figcaption><h3 class="catalog__item-name">Printed swimsuit</h3><span class="catalog__price">$23</span>
 						</figcaption>
+						<div class="catalog__controls">
+				<button class="catalog__control catalog__control--left"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+				<button class="catalog__control catalog__control--right"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+				</div>
 					</figure>
-					<figure class="catalog__item">
+					<figure class="catalog__item" data-val="2">
 						<a class="catalog__link" href="#">
 						<img class="catalog__image" alt="" src="img/bermuda-shorts.jpg"></a>
 						<figcaption><h3 class="catalog__item-name">Jogging bermuda shorts</h3><span class="catalog__price catalog__price--old">$36</span><span class="catalog__price catalog__price--new">$12</span></figcaption>
+						<div class="catalog__controls">
+				<button class="catalog__control catalog__control--left"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+				<button class="catalog__control catalog__control--right"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+				</div>
 					</figure>
-					<figure class="catalog__item catalog__item--new">
+					<figure class="catalog__item catalog__item--new" data-val="3">
 						<a class="catalog__link" href="#">
 						<img class="catalog__image" alt="" src="img/flip-flops.jpg"></a>
 						<figcaption><h3 class="catalog__item-name">Basic beach flip flops</h3><span class="catalog__price">$9</span></figcaption>
+						<div class="catalog__controls">
+				<button class="catalog__control catalog__control--left"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+				<button class="catalog__control catalog__control--right"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+				</div>
 					</figure>
-					<figure class="catalog__item">
+					<figure class="catalog__item" data-val="4">
 						<a class="catalog__link" href="#">
 						<img class="catalog__image" alt="" src="img/sunglasses.jpg"></a>
 						<figcaption><h3 class="catalog__item-name">Black sunglasses</h3><span class="catalog__price">$29</span></figcaption>
+						<div class="catalog__controls">
+				<button class="catalog__control catalog__control--left"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+				<button class="catalog__control catalog__control--right"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+				</div>
 					</figure>
-					<figure class="catalog__item">
+					<figure class="catalog__item" data-val="5">
 						<a class="catalog__link" href="#">
 						<img class="catalog__image" alt="" src="img/twill-shirt.jpg"></a>
 						<figcaption><h3 class="catalog__item-name">Long sleeved twill shirt</h3><span class="catalog__price">$20</span></figcaption>
+						<div class="catalog__controls">
+				<button class="catalog__control catalog__control--left"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+				<button class="catalog__control catalog__control--right"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+				</div>
 					</figure>
-					<figure class="catalog__item">
+					<figure class="catalog__item" data-val="6">
 						<a class="catalog__link" href="#">
 						<img class="catalog__image" alt="" src="img/swimsuit.jpg"></a>
 						<figcaption><h3 class="catalog__item-name">Basic swimsuit</h3><span class="catalog__price">$36</span></figcaption>
+						<div class="catalog__controls">
+				<button class="catalog__control catalog__control--left"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+				<button class="catalog__control catalog__control--right"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+				</div>
 					</figure>
-					<figure class="catalog__item">
+					<figure class="catalog__item" data-val="7">
 						<a class="catalog__link" href="#">
 						<img class="catalog__image" alt="" src="img/bleached-shorts.jpg"></a>
 						<figcaption><h3 class="catalog__item-name">Bleached shorts</h3><span class="catalog__price">$12</span></figcaption>
+						<div class="catalog__controls">
+				<button class="catalog__control catalog__control--left"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+				<button class="catalog__control catalog__control--right"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+				</div>
 					</figure>
-					<figure class="catalog__item">
+					<figure class="catalog__item" data-val="8">
 						<a class="catalog__link" href="#">
 						<img class="catalog__image" alt="" src="img/t-shirt-discount.jpg"></a>
 						<figcaption><h3 class="catalog__item-name">T-shirt with lower panel</h3><span class="catalog__price catalog__price--old">$32</span><span class="catalog__price catalog__price--new">$12</span></figcaption>
+						<div class="catalog__controls">
+				<button class="catalog__control catalog__control--left"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+				<button class="catalog__control catalog__control--right"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+				</div>
 					</figure>
 				</div>
 				<p class="catalog__more-link"><a class="catalog__link hvr-underline-from-center" href="#">Load more...</a></p>
@@ -153,7 +208,7 @@
 					<input type="email" class="subscribe__email-field" name="email" id="email" placeholder="Stay updated on news">
 					<label for="email"></label>
 					<button type="submit" class="subscribe__submit-btn">
-					<i class="fa fa-angle-right" aria-hidden="true"></i></button>
+					<i class="fa fa-angle-right fa fa-chevron-circle-right" aria-hidden="true"></i></button>
 				</form>
 			</div>
 		</section>

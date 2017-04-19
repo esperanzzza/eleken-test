@@ -3,7 +3,7 @@ $(document).ready(function() {
     var
         toggleDown = $('.header__toggle-down, .menu-mobile__toggle-down'),
         menuChoice = $('.header__choice-menu, .menu-mobile__choice-menu');
-    menuChoiceCurrency = $(".header__choice-menu[data-menu='currency'], .menu-mobile__choice-menu[data-menu='currency']"),
+        menuChoiceCurrency = $(".header__choice-menu[data-menu='currency'], .menu-mobile__choice-menu[data-menu='currency']"),
         menuChoiceLanguage = $(".header__choice-menu[data-menu='lang'], .menu-mobile__choice-menu[data-menu='lang']"),
         menuChoiceToggle = 'header__choice-menu--js, menu-mobile__choice-menu--js',
         itemDefaultCurrency = $('.header__choice--currency, .menu-mobile__choice--currency'),
@@ -18,7 +18,14 @@ $(document).ready(function() {
         burgerToggle = $('.burger'),
         burgerActive = 'burger--active',
         modal = $('.modal'),
-        modalOpen = 'modal--open';
+        modalOpen = 'modal--open',
+        catalogItem = $('.catalog__item'),
+        itemCurrent = 'catalog__item--current',
+        left = $('.catalog__control--left'),
+        right = $('.catalog__control--right'),
+        catalog = $('.catalog_gallery'),
+        currentSlide = $('.catalog__item--current').index();
+
 
     toggleDown.click(function(event) {
 
@@ -66,6 +73,41 @@ $(document).ready(function() {
 
     });
 
+    right.click(function() {
+        moveRight.movebackward();
+    });
+
+
+    moveRight = {
+
+        movebackward: function() {
+            if (currentSlide < 7) {
+
+                catalogItem.eq(currentSlide).removeClass(itemCurrent).next().addClass(itemCurrent);
+                currentSlide++;
+            } else {
+                moveLeft();
+            }
+        }
+
+    }
+
+    left.click(function() {
+        moveLeft();
+    });
+
+    function moveLeft() {
+        if (currentSlide >= 1) {
+
+            catalogItem.eq(currentSlide).removeClass(itemCurrent).prev().addClass(itemCurrent);
+            currentSlide--;
+
+        } else {
+            catalogItem.first().addClass(itemCurrent);
+            moveRight.movebackward();
+        }
+
+    };
 
 
 });
