@@ -76,11 +76,8 @@
 }
 
 &__toggle-down {
-	border: none;
-	outline: none;
 	background: transparent;
 	opacity: 0.5;
-	cursor: pointer;
 	font-size: 8px;
 }
 
@@ -138,10 +135,7 @@
 
 &__close-icon {
 	color: $color-white;
-	border: none; 
-	outline: none;
 	background: transparent;
-	cursor: pointer;
 }
 
 &__logo {
@@ -194,47 +188,8 @@
 	}
  }
 
- &__search-form {
- 	position: relative;
- }
-
- &__search-icon,
- &__search-submit {
- 	border: none;
+ &__search-icon {
  	background: transparent;
- 	outline: none;
  	opacity: 0.5;
- 	cursor: pointer;
  }
-
- &__search-icon--close {
- 	display: none;
- }
-
- &__search-submit {
-	 display: none;
-
-	 	&--active {
-	 	display: block;
-	 }
- }
-
- &__search-field {
- 		position: absolute;
- 		content: '';
- 		left: 20px;
- 		bottom: 0;
- 		background: transparent;
-        border: none;
-        outline: none;
-        width: 0;
-        border-bottom: 3px solid transparent;
-        transition: all .3s ease-out; 
-
-    &:focus {
-        width: 90px; 
-        border-bottom: 2px solid $color-blue;
-        overflow: hidden;
-    }
-    }
 }

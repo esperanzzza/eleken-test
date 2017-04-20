@@ -1,0 +1,108 @@
+.search {
+
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 140px;
+	left: 0;
+
+&--show {
+	display: block;
+}
+
+	&__form {
+ 	display: flex;
+ 	justify-content: center;
+ 	padding-top: 100px;
+}
+
+ &__submit {
+ 	background: transparent;
+ 	cursor: pointer;
+ 	font-size: $font-size--lg;
+ 	color: $color-white;	
+
+ 	&:hover {
+ 	color: $color-blue;
+	}			
+}
+
+ &__field {
+ 		background: transparent;
+        border: none;
+        outline: none;
+        width: 250px;
+        border-bottom: 3px solid $color-blue;
+        transition: all .3s ease-out; 
+        color: $color-white;
+
+    &:focus {
+        width: 400px; 
+        border-bottom: 2px solid $color-blue;
+        overflow: hidden;
+    }
+
+	&::-webkit-input-placeholder {
+	  opacity: 1; 
+	  transition: opacity 0.3s ease;
+	  color: $color-white;
+	  text-transform: uppercase;
+	  font-size: $font-size--md;
+	}
+
+	&::-moz-placeholder {
+	  opacity: 1; 
+	  transition: opacity 0.3s ease;
+	  color: $color-white;
+	  text-transform: uppercase;
+	  font-size: $font-size--md;
+	}
+
+	&:-moz-placeholder {
+	  opacity: 1; 
+	  transition: opacity 0.3s ease;
+	  color: $color-white;
+	  text-transform: uppercase;
+	  font-size: $font-size--md;
+	}
+
+	&:-ms-input-placeholder {
+		opacity: 1; 
+		transition: opacity 0.3s ease;
+		color:$color-white;
+		text-transform: uppercase;
+		font-size: $font-size--md;
+	}
+
+		&:focus::-webkit-input-placeholder {
+		  opacity: 0; 
+		  transition: opacity 0.3s ease;
+		}
+
+		&:focus::-moz-input-placeholder {
+		   opacity: 0; 
+		  transition: opacity 0.3s ease;
+		}
+
+		&:focus:-moz-input-placeholder {
+		  opacity: 0; 
+		  transition: opacity 0.3s ease;
+		}
+
+		&:focus:-ms-input-placeholder {
+		  opacity: 0; 
+		  transition: opacity 0.3s ease;
+		}
+}
+
+
+&__close {
+	position: absolute;
+	fill: $color-white;
+	background: none;
+	right: 50px;
+	top: 100px;
+}
+}

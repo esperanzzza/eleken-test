@@ -1,7 +1,9 @@
 .subscribe {
 	background: url('../img/subscribe-bg.jpg') no-repeat center;
-	width: 1440px;
+	width: 100%;
+	height: auto;
 	height: 287px;
+	background-size: cover;
 	margin-bottom: 25px;
 
 		@media (max-width: 899px) {
@@ -109,8 +111,6 @@
 	right: 20px;
 	top: 13px;
 	color: $color-white;
-	border: none;
-	outline: none;
 	background: transparent;
 	cursor: pointer;
 	font-size: $font-size--md;

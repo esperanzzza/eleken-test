@@ -26,10 +26,10 @@
 	text-transform: uppercase;
 	font-size: $font-size--mobile;
 
-&:hover,
-&:focus {
+	&:hover,
+	&:focus {
 	color: $color-blue;
-}
+	}
 }
 
 &__top-group {
@@ -51,11 +51,8 @@
 }
 
 &__toggle-down {
-	border: none;
-	outline: none;
 	background: transparent;
 	color: $color-white;
-	cursor: pointer;
 	font-size: $font-size--base;
 }
 
@@ -87,7 +84,34 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px transparent;
+		position: relative;
+
+		  &:before {
+		    pointer-events: none;
+		    position: absolute;
+		    z-index: -1;
+		    content: '';
+		    border-style: solid;
+		    -webkit-transition-duration: 0.3s;
+		    transition-duration: 0.3s;
+		    -webkit-transition-property: transform;
+		    transition-property: transform;
+		    left: calc(60% - 10px);
+		    top: 0;
+		    border-width: 0 10px 10px 10px;
+		    border-color: transparent transparent $color-white transparent;
+		 }
+
+			  &:hover:before, 
+			  &:focus:before, 
+			  &:before {
+			    -webkit-transform: translateY(-15px);
+			    transform: translateY(-15px);
+		}
+}
 
 &__choice {
 	text-transform: uppercase;
@@ -110,10 +134,7 @@
 
 &__close-icon {
 	color: $color-dark;
-	border: none; 
-	outline: none;
 	background: transparent;
-	cursor: pointer;
 	font-size: $font-size--mobile;
 }
 
@@ -132,9 +153,9 @@
 	font-size: $font-size--lg;
 	color: $color-white;
 
-&:hover:before {
-	color: $color-blue;
-}
+	&:hover:before {
+		color: $color-blue;
+	}
 }
 
 &__item-number[type=number] {
@@ -170,12 +191,9 @@
 
  &__search-icon,
  &__search-submit  {
- 	border: none;
  	background: transparent;
- 	outline: none;
  	color: $color-white;
  	font-size: $font-size--lg;
- 	cursor: pointer;
  }
 
 &__search-icon {
@@ -204,6 +222,7 @@
         width: 0;
         border-bottom: 3px solid transparent;
         transition: all .3s ease-out; 
+        color: $color-white;
 
     &:focus {
         width: 200px; 

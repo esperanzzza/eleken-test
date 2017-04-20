@@ -82,8 +82,12 @@
 				background: linear-gradient(to right, #1477d4, #248ddc);
 				padding: 7px 10px;
 				border-radius: 20px;
-			}
+				transition: transform 0.5s ease-in-out;
 		}
+			&:hover:after {
+				transform: scale(1.1);
+				}
+	}
 
 		@media (min-width: $screen-xs) and (max-width: 650px) {
 				display: none;
@@ -105,10 +109,7 @@
 				color: $color-dark;
 				font-size: $font-size--lg;
 				top: calc(50% - 30px);
-				border: none;
-				outline: none;
 				background: transparent;
-				cursor: pointer;
 
 	&--left {		
 				left: -30px;
@@ -216,8 +217,6 @@
 display: inline-block;
 vertical-align: middle;
 box-sizing: border-box;
-border: none;
-outline: none;
 width: 145px;
 margin-top: 15px;
 padding: 14px 0;
