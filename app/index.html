@@ -49,13 +49,13 @@
 			</div>
 			<div class="header__bottom">
 				<div class="container container--row">
-					<h1 class="header__logo"><svg
+					<a class="header__logo link" href="#"><svg
 						xmlns="http://www.w3.org/2000/svg"
 						xmlns:xlink="http://www.w3.org/1999/xlink"
 						width="115px" height="45px">
 						<text kerning="auto" font-family="Didot" fill="rgb(51, 51, 51)" font-weight="bold" font-size="52px" x="0px" y="39.062px">C&#38;B</text>
 					</svg>
-					</h1>
+					</a>
 					<nav class="main-nav hide-mobile">
 						<ul class="main-nav__menu">
 							<li class="main-nav__list-item"><a href="#" class="main-nav__link link link--underline">Home</a></li>
@@ -69,7 +69,7 @@
 					<div class="header__right-row header__right-row--bottom hide-mobile">
 						<div class="header__cart-group">
 							<a href="#" class="header__cart-link link link--underline">Your bag</a>
-							<input class="header__item-number" type="number" value="2" name="number">
+							<button class="header__item-number btn" type="buton">2</button>
 						</div>
 						<button type="button" class="header__search-icon btn fa fa-search" aria-hidden="true"></button>
 					</div>
@@ -119,8 +119,10 @@
 				</div>
 				<div class="catalog__gallery">
 					<figure class="catalog__item catalog__item--current">
-						<a class="catalog__link link" href="#">
-						<img class="catalog__image" alt="" src="img/swimsuit--printed.jpg"></a>
+						<a class="catalog__link-img link" href="#">
+						<div class="catalog__image">
+						<img alt="" src="img/swimsuit--printed.jpg">
+						</div></a>
 						<figcaption><h3 class="catalog__item-name">Printed swimsuit</h3><span class="catalog__price">$23</span>
 						</figcaption>
 						<div class="catalog__controls">
@@ -129,17 +131,23 @@
 						</div>
 					</figure>
 					<figure class="catalog__item">
-						<a class="catalog__link link" href="#">
-						<img class="catalog__image" alt="" src="img/bermuda-shorts.jpg"></a>
+						<a class="catalog__link-img link" href="#">
+						<div class="catalog__image">
+						<img alt="" src="img/bermuda-shorts.jpg">
+						</div></a>
 						<figcaption><h3 class="catalog__item-name">Jogging bermuda shorts</h3><span class="catalog__price catalog__price--old">$36</span><span class="catalog__price catalog__price--new">$12</span></figcaption>
 						<div class="catalog__controls">
 							<button class="catalog__control catalog__control--left btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
 							<button class="catalog__control catalog__control--right btn"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
 						</div>
 					</figure>
-					<figure class="catalog__item catalog__item--new">
-						<a class="catalog__link link" href="#">
-						<img class="catalog__image" alt="" src="img/flip-flops.jpg"></a>
+					<figure class="catalog__item">
+						<a class="catalog__link-img link" href="#">
+						<div class="catalog__image">
+						<img alt="" src="img/flip-flops.jpg">
+						<span class="catalog__new"></span>
+						</div>
+						</a>
 						<figcaption><h3 class="catalog__item-name">Basic beach flip flops</h3><span class="catalog__price">$9</span></figcaption>
 						<div class="catalog__controls">
 							<button class="catalog__control catalog__control--left btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
@@ -147,8 +155,10 @@
 						</div>
 					</figure>
 					<figure class="catalog__item">
-						<a class="catalog__link link" href="#">
-						<img class="catalog__image" alt="" src="img/sunglasses.jpg"></a>
+						<a class="catalog__link-img link" href="#">
+						<div class="catalog__image">
+						<img alt="" src="img/sunglasses.jpg">
+						</div></a>
 						<figcaption><h3 class="catalog__item-name">Black sunglasses</h3><span class="catalog__price">$29</span></figcaption>
 						<div class="catalog__controls">
 							<button class="catalog__control catalog__control--left btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
@@ -156,8 +166,10 @@
 						</div>
 					</figure>
 					<figure class="catalog__item">
-						<a class="catalog__link link" href="#">
-						<img class="catalog__image" alt="" src="img/twill-shirt.jpg"></a>
+						<a class="catalog__link-img link" href="#">
+						<div class="catalog__image">
+						<img alt="" src="img/twill-shirt.jpg">
+						</div></a>
 						<figcaption><h3 class="catalog__item-name">Long sleeved twill shirt</h3><span class="catalog__price">$20</span></figcaption>
 						<div class="catalog__controls">
 							<button class="catalog__control catalog__control--left btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
@@ -165,8 +177,10 @@
 						</div>
 					</figure>
 					<figure class="catalog__item">
-						<a class="catalog__link link" href="#">
-						<img class="catalog__image" alt="" src="img/swimsuit.jpg"></a>
+						<a class="catalog__link-img link" href="#">
+						<div class="catalog__image">
+						<img alt="" src="img/swimsuit.jpg">
+						</div></a>
 						<figcaption><h3 class="catalog__item-name">Basic swimsuit</h3><span class="catalog__price">$36</span></figcaption>
 						<div class="catalog__controls">
 							<button class="catalog__control catalog__control--left btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
@@ -174,8 +188,10 @@
 						</div>
 					</figure>
 					<figure class="catalog__item">
-						<a class="catalog__link link" href="#">
-						<img class="catalog__image" alt="" src="img/bleached-shorts.jpg"></a>
+						<a class="catalog__link-img link" href="#">
+						<div class="catalog__image">
+						<img alt="" src="img/bleached-shorts.jpg">
+						</div></a>
 						<figcaption><h3 class="catalog__item-name">Bleached shorts</h3><span class="catalog__price">$12</span></figcaption>
 						<div class="catalog__controls">
 							<button class="catalog__control catalog__control--left btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
@@ -183,8 +199,10 @@
 						</div>
 					</figure>
 					<figure class="catalog__item">
-						<a class="catalog__link link" href="#">
-						<img class="catalog__image" alt="" src="img/t-shirt-discount.jpg"></a>
+						<a class="catalog__link-img link" href="#">
+						<div class="catalog__image">
+						<img alt="" src="img/t-shirt-discount.jpg">
+						</div></a>
 						<figcaption><h3 class="catalog__item-name">T-shirt with lower panel</h3><span class="catalog__price catalog__price--old">$32</span><span class="catalog__price catalog__price--new">$12</span></figcaption>
 						<div class="catalog__controls">
 							<button class="catalog__control catalog__control--left btn"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
@@ -209,13 +227,14 @@
 		</section>
 		<footer class="footer hide-mobile">
 			<div class="container container--row">
-				<h1 class="footer__logo"><svg
+				<a class = "footer__logo link" href="#">
+				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink"
 					width="115px" height="45px">
 					<text kerning="auto" font-family="Didot" fill="rgb(51, 51, 51)" font-weight="bold" font-size="52px" x="0px" y="39.062px">C&#38;B</text>
 				</svg>
-				</h1>
+				</a>
 				<nav class="main-nav main-nav--footer">
 					<ul class="main-nav__menu">
 						<li class="main-nav__list-item"><a href="#" class="main-nav__link main-nav__link--footer link link--underline">Home</a></li>
@@ -293,7 +312,7 @@
 					<div class="menu-mobile__bottom-group">
 						<div class="menu-mobile__cart-group">
 							<a href="#" class="menu-mobile__cart-link link"><i class="menu-mobile__cart-icon fa fa-shopping-cart" aria-hidden="true"></i></a>
-							<input class="menu-mobile__item-number" type="number" value="2" name="number">
+							<button class="menu-mobile__item-number btn" type="button">2</button>
 						</div>
 						<form class="menu-mobile__search-form" action="/echo" method="get" role="search">
 							<input type="search" class="menu-mobile__search-field" name="search" id="search">

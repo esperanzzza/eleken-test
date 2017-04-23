@@ -87,7 +87,7 @@ gulp.task('img', function() {
                 removeViewBox: false
             }],
             use: [pngquant()]
-        }))) 
+        })))
         .pipe(gulp.dest('docs/img'));
 
 });
